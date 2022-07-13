@@ -1,10 +1,10 @@
-# Getting started
+# 开始
 /getting-started/introduction     /getting-started/quick-start 302!
 /getting-started/installation     /getting-started/quick-start 302!
 /getting-started/commands         /api/commands/add 302!
 /getting-started/bridge           /bridge 302!
 /getting-started/bridge-composition-api /bridge/bridge-composition-api 302!
-# Concepts
+# 概念
 /concepts/introduction            /guide/concepts/introduction 302!
 /concepts/vuejs-development       /guide/concepts/vuejs-development 302!
 /concepts/rendering               /guide/concepts/rendering 302!
@@ -12,7 +12,7 @@
 /concepts/server-engine           /guide/concepts/server-engine 302!
 /concepts/typescript              /guide/concepts/typescript 302!
 /concepts/esm                     /guide/going-further/esm 302!
-# Docs
+# 文档
 /docs/usage/data-fetching         /guide/features/data-fetching 302!
 /docs/usage/state                 /guide/features/state-management 302!
 /docs/usage/meta-tags             /guide/features/head-management 302!

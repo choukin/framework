@@ -51,7 +51,7 @@ Nuxt's goal is to make web development intuitive and performant with a great dev
 - Ensure you have the latest LTS version of Node.js installed
 - Install dependencies with `npx yarn install`
 - Run `npx yarn stub` to activate passive development
-- Open playground with `npx yarn dev`
+<!-- - Open playground with `npx yarn dev` -->
 
 Learn more about in our documentation on [how to contribute to Nuxt](https://v3.nuxtjs.org/community/contribution).
 

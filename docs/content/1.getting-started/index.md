@@ -1,5 +1,5 @@
 ---
-title: Get Started
+title: 开始
 layout.aside: true
 layout.asideClass: ''
 navigation.exclusive: true

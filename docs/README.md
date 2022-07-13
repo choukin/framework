@@ -1,4 +1,4 @@
-# Nuxt 3 Docs
+# Nuxt 3 文档
 
-- Website: https://v3.nuxtjs.org/
-- Setup and Contribution Guide: https://v3.nuxtjs.org/community/contribution#documentation-guide
+- 网址 : https://v3.nuxtjs.org/
+- 安装贡献引导: https://v3.nuxtjs.org/community/contribution#documentation-guide

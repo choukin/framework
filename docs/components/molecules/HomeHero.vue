@@ -4,7 +4,7 @@
       <section class="flex flex-col justify-start w-full px-4 pb-24 sm:pt-12 sm:pb-36 lg:pt-24 lg:pb-50 text-center z-20">
         <div class="highlight-box mx-auto mt-6 rounded-md">
           <NuxtLink to="/community/roadmap" class="text-sm inline-flex items-center space-x-1 px-4 md:px-5 py-1 md:py-2 font-medium">
-            <span>Check out the Nuxt 3 roadmap</span><IconArrowRight class="mt-1px" />
+            <span>查看 Nuxt 3 路线图</span><IconArrowRight class="mt-1px" />
           </NuxtLink>
         </div>
         <Gem class="block m-x-auto" />
@@ -61,7 +61,7 @@ export default {
     primary: {
       type: Object,
       default: () => ({
-        text: 'Star on GitHub',
+        text: 'GitHub 加星',
         url: 'https://github.com',
         icon: 'IconGitHub'
       })
@@ -69,7 +69,7 @@ export default {
     secondary: {
       type: Object,
       default: () => ({
-        text: 'Getting started',
+        text: '现在开始学习',
         url: '/docs'
       })
     }
