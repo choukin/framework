@@ -4,8 +4,8 @@ icon: IconCloud
 
 # DigitalOcean
 
-Nitro supports deploying on the [Digital Ocean App Platform](https://docs.digitalocean.com/products/app-platform/) with minimal configuration.
+把Nitrob部署到 [Digital Ocean App Platform](https://docs.digitalocean.com/products/app-platform/) 配置非常简单.
 
-## Learn more
+## 了解更多
 
 :ReadMore{link="https://nitro.unjs.io/deploy/providers/digitalocean.html" title="the Nitro documentation for DigitalOcean deployment"}

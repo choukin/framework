@@ -4,15 +4,15 @@ icon: LogoCloudFlare
 
 # Cloudflare Workers
 
-How to deploy Nuxt to [Cloudflare Workers](https://workers.cloudflare.com/).
+如何把Nuxt部署到 [Cloudflare Workers](https://workers.cloudflare.com/).
 
 ::list
 
-- Support for Workers build output
-- Zero-millisecond cold start with edge-side rendering
-- Minimal configuration required
+- 支持Workers构建输出
+- 边缘渲染实现0秒冷启动
+- 配置简单
 ::
 
-## Learn more
+## 了解更多
 
 :ReadMore{link="https://nitro.unjs.io/deploy/providers/cloudflare.html" title="the Nitro documentation for Cloudflare deployment"}

@@ -4,8 +4,8 @@ icon: IconCloud
 
 # Heroku
 
-How to deploy Nuxt to [Heroku](https://www.heroku.com/).
+如何将Nuxt部署到 [Heroku](https://www.heroku.com/).
 
-## Learn more
+## 了解更多
 
 :ReadMore{link="https://nitro.unjs.io/deploy/providers/heroku.html" title="the Nitro documentation for Heroku deployment"}

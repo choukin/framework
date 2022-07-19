@@ -4,8 +4,8 @@ icon: IconCloud
 
 # Render
 
-How to deploy Nuxt to [Render](https://render.com/)
+如何将Nuxt部署到 [Render](https://render.com/)
 
-## Learn more
+## 了解更多
 
 :ReadMore{link="https://nitro.unjs.io/deploy/providers/render.html" title="the Nitro documentation for Render deployment"}
