@@ -1,14 +1,15 @@
 # `useError`
 
-Nuxt provides a composable to catch global errors.
+Nuxt 提供组合项来捕获全局错误。
 
-This function will return the global Nuxt error that is being handled.
+这个方法回返回Nuxt进程中的全局错误。
 
 ```ts
 const error = useError()
 ```
 
-`useError` sets an error in the state and creates a reactive and SSR-friendly global Nuxt error across components.
+`useError` 设置一个错误状态，并且在组件间创建一个SSR友好的响应式Nuxt 全局错误，
+
 
 ::ReadMore{link="/guide/features/error-handling"}
 ::

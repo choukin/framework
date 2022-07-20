@@ -1,17 +1,17 @@
 # `useRequestHeaders`
 
-Nuxt provides composables and utilities for first-class server-side-rendering support.
+Nuxt 为了一流的服务器渲染提供了组合项和工具函数。
 
-Within your pages, components, and plugins you can use `useRequestHeaders` to access the incoming request headers.
+在页面，组件，插件中，可以通过`useRequestEvent`来访问进行中的请求头。
 
 ```js
-// Get all request headers
+// 获取所有头信息
 const headers = useRequestHeaders()
 
-// Get only cookie request header
+// 只获取头部cookie
 const headers = useRequestHeaders(['cookie'])
 ```
 
 ::alert{icon=👉}
-In the browser, `useRequestHeaders` will return an empty object.
+在浏览器端, `useRequestHeaders` 回返回空独喜.
 ::

@@ -1,6 +1,6 @@
 # `useAsyncData`
 
-Within your pages, components, and plugins you can use useAsyncData to get access to data that resolves asynchronously.
+在页面，组件和插件中，可以使用`useAysncData` 来异步获取数据。
 
 ## Type
 
@@ -33,31 +33,31 @@ type AsyncData<DataT> = {
 }
 ```
 
-## Params
+## 参数
 
-* **key**: a unique key to ensure that data fetching can be properly de-duplicated across requests. If you do not provide a key, then a key that is unique to the file name and line number of the instance of `useAsyncData` will be generated for you.
-* **handler**: an asynchronous function that returns a value
+* **key**: 一个唯一的健，用于确保在夸请求是能正确的删除重复数据。如果你没有设置 key ,`useAsyncData` 实例会更具文件名和行号生成唯一的key。
+* **handler**: 一个带返回值的异步函数
 * **options**:
-  * _lazy_: whether to resolve the async function after loading the route, instead of blocking navigation (defaults to `false`)
-  * _default_: a factory function to set the default value of the data, before the async function resolves - particularly useful with the `lazy: true` option
-  * _server_: whether to fetch the data on the server (defaults to `true`)
-  * _transform_: a function that can be used to alter `handler` function result after resolving
-  * _pick_: only pick specified keys in this array from the `handler` function result
-  * _watch_: watch reactive sources to auto-refresh
-  * _initialCache_: When set to `false`, will skip payload cache for initial fetch. (defaults to `true`)
+  * _lazy_: 是否在家中路由后解析异步函数，而不是阻塞导航(默认 false)
+  * _default_: 在异步函数解析前设置data默认值的工具函数，特别适用于设置了`lazy:true`的情况。
+  * _server_: 是否获取服务器上的数据（默认是 true）
+  * _transform_: 一个可以在 `handler` 函数解析后更改返回结果的函数。
+  * _pick_: 用于从`handle`函数的结果中筛选这个数组中指定key。
+  * _watch_: 监听响应数据自动更新
+  * _initialCache_: 但设置为`false`时，不会对 有效负载进行缓存。默认true
 
-Under the hood, `lazy: false` uses `<Suspense>` to block the loading of the route before the data has been fetched. Consider using `lazy: true` and implementing a loading state instead for a snappier user experience.
+在底层，`lazy:false` 在数据加载完成前使用 `<Suspense>`来阻塞路由加载。推荐使用`lazy:true` 加载数据，以获得更好的用户体验。
 
-## Return values
+## 返回值
+* **data**: 传入的异步函数的返回结果
+* **pending**: 一个布尔值，表示数据是否仍在加载中。
+* **refresh**: 一个函数，用来属性`handler`函数的返回结果。
+* **error**: 一个错误对象，包含请求数据错误时的内容功能
 
-* **data**: the result of the asynchronous function that is passed in
-* **pending**: a boolean indicating whether the data is still being fetched
-* **refresh**: a function that can be used to refresh the data returned by the `handler` function
-* **error**: an error object if the data fetching failed
+默认情况下，Nuxt 回等到 `refresh`执行后才能再次执行。可以传递`true`来跳过等待。
 
-By default, Nuxt waits until a `refresh` is finished before it can be executed again. Passing `true` as parameter skips that wait.
 
-## Example
+## 实例
 
 ```ts
 const { data, pending, error, refresh } = await useAsyncData(

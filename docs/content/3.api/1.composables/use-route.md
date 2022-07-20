@@ -1,12 +1,12 @@
 # `useRoute`
 
-The `useRoute` composable returns the current route and must be called in a `setup` function, plugin, or route middleware.
+`useRoute` 返回当前路由对象，只能在`setup`函数，插件，或路由中间件中使用。
 
-Within the template of a Vue component, you can access the route using `$route`.
+在Vue组件模版中，你可以使用 `$route`
 
-## Example
+## 示例
 
-In the following example, we call an API via `useFetch` using a dynamic page parameter - `slug` - as part of the URL.
+在下面的例子中我们通过 `useFetch` 来获取动态路由参数，- `slug`作为URL的一部分.
 
 ```html [~/pages/[slug].vue]
 <script setup>
@@ -22,17 +22,17 @@ const { data: mountain } = await useFetch(`https://api.nuxtjs.dev/mountains/${ro
 </template>
 ```
 
-If you need to access the route query parameters (for example `example` in the path `/test?example=true`), then you can use `useRoute().query` instead of `useRoute().params`.
+如果要获取query参数，（例如：路径 `/tets?example=true` 中的 `example`）你可以用 `useRoute().query`.
 
-Apart from dynamic parameters and query parameters, `useRoute()` also provides the following computed references related to the current route:
+除了动态路由参数和query参数，`useRoute()`还提供了下列于当前路由相关的计算引用：
 
-* **fullPath**: encoded URL associated with the current route that contains path, query and hash
-* **hash**: decoded hash section of the URL that starts with a #
-* **matched**: array of normalized matched routes with current route location
-* **meta**: custom data attached to the record
-* **name**: unique name for the route record
-* **path**: encoded pathname section of the URL
-* **redirectedFrom**: route location that was attempted to access before ending up on the current route location
+* **fullPath**: 编码过的当前路由URL，包括 path,query,hash
+* **hash**: 解码后的hash，URL中#开始的内容
+* **matched**: 与当前路由位置，匹配的标准化匹配路由数组
+* **meta**: 附加的自定义数据
+* **name**: 记录路由唯一的名称
+* **path**: 编码后的URL的pathname 部分
+* **redirectedFrom**: 在到达当前路由时,访问过的路由位置
 
 ::ReadMore{link="https://router.vuejs.org/api/#routelocationnormalized"}
 ::

@@ -1,12 +1,12 @@
 # `useLazyFetch`
 
-## Description
+## 描述
 
-By default, [useFetch](/api/composables/use-fetch) blocks navigation until its async handler is resolved.
+默认情况下, [useFetch](/api/composables/use-fetch) 回阻塞导航，直到异步处理完成。
 
-`useLazyFetch` provides a wrapper around `useFetch` that triggers navigation before the handler is resolved by setting the `lazy` option to `true`.
+`useLazyFetch` 是对 `useFetch`的封装，把 `lazy`选择设置成了`true`,先触发导航在处理异步请求。
 
-> `useLazyFetch` has the same signature as `useFetch`.
+> `useLazyFetch` 和 `useFetch`的签名相同.
 
 :ReadMore{link="/api/composables/use-fetch"}
 

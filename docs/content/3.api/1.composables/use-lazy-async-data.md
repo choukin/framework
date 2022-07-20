@@ -1,16 +1,16 @@
 # `useLazyAsyncData`
 
-## Description
+## 描述
 
-By default, [useAsyncData](/api/composables/use-async-data) blocks navigation until its async handler is resolved.
+默认情况下, [useAsyncData](/api/composables/use-async-data)回阻塞导航，直到异步处理完成。
 
-`useLazyAsyncData` provides a wrapper around `useAsyncData` that triggers navigation before the handler is resolved by setting the `lazy` option to `true`.
+`useLazyAsyncData` 对`useAsyncData`的封装，把 `lazy`选择设置成了`true` 先导航路由在处理异步函数。
 
-> `useLazyAsyncData` has the same signature as `useAsyncData`.
+> `useLazyAsyncData` 和 `useAsyncData`的签名相同.
 
 :ReadMore{link="/api/composables/use-async-data"}
 
-## Example
+## 实例
 
 ```vue
 <template>

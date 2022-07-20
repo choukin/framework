@@ -5,8 +5,9 @@ useState<T>(init?: () => T | Ref<T>): Ref<T>
 useState<T>(key: string, init?: () => T | Ref<T>): Ref<T>
 ```
 
-* **key**: A unique key ensuring that data fetching is properly de-duplicated across requests. If you do not provide a key, then a key that is unique to the file and line number of the instance of `useState` will be generated for you.
-* **init**: A function that provides initial value for the state when not initiated. This function can also return a `Ref`.
+* **key**: 确保跨请求（没懂？）时删除重复数据的唯一键值，如果你不提供key，`useState`会根据文件和行号为你生成唯一的key。
+
+* **init**: 在未启动时，为状态提供初始值的函数，这个函数还可以返回一个R`Ref`.
 * **T**: (typescript only) Specify the type of state
 
 ::ReadMore{link="/guide/features/state-management"}

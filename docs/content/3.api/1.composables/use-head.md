@@ -2,21 +2,22 @@
 
 ::ReadMore{link="/guide/features/head-management"}
 
-Nuxt provides a composable to update the head properties of your page with an [`MetaObject`](/api/composables/use-head/#metaobject) of meta properties with keys corresponding to meta tags:
+Nuxt 提供了一个用来在页面中更新head属性的组合项，它使用[`MetaObject`](/api/composables/use-head/#metaobject) 的属性来对应元数据标记:
 
-`title`, `base`, `script`, `style`, `meta` and `link`, as well as `htmlAttrs` and `bodyAttrs`. Alternatively, you can pass a function returning the object for reactive metadata.
+`title`, `base`, `script`, `style`, `meta`  `link`, 以及 `htmlAttrs` 和 `bodyAttrs`. 或者你可以传一个函数，这个函数的返回值是一个响应式的元数据对象。
+
 
 ```js
 useHead(options: MetaObject)
 ```
 
 ::alert{icon=👉}
-**`useHead` only works during `setup`**.
+**`useHead` 只能在 `setup`**中使用.
 ::
 
-## Example
+## 实例
 
-The example below changes the website's title in the `meta` and inserts a Google Font using the `link` property.
+下面的例子使用`meta`标记来修改网站title，并且使用`link`来插入google字体。
 
 ```js
 export default {
@@ -37,11 +38,12 @@ export default {
 
 ## `MetaObject`
 
-* **charset**: the character encoding in which the document is encoded => `<meta charset="<value>" />` (default: `'utf-8'`)
-* **viewport**: configuration of the viewport (the area of the window in which web content can be seen) => `<meta name="viewport" content="<value>" />` (default: `'width=device-width, initial-scale=1'`)
-* **meta**: array, each item maps to a newly-created `<meta>` element, where object properties map to attributes.
-* **link**: array, each item maps to a newly-created `<link>` element, where object properties map to attributes.
-* **style**: array, each item maps to a newly-created `<style>` element, where object properties map to attributes.
-* **script**: array, each item maps to a newly-created `<script>` element, where object properties map to attributes.
+* **charset**: 文档的字符编码格式。=> `<meta charset="<value>" />` (默认: `'utf-8'`)
+* **viewport**: 配置视口(窗口可以看到的web内容的可视区域) => `<meta name="viewport" content="<value>" />` (default: `'width=device-width, initial-scale=1'`)
+* **meta**: 数组类型，每个元素都可以创建一个`<meta>`标签，对象属性对应标签的属性。
+* **link**: 数组类型，每个元素都会创建一个`<link>`元素 对象属性对应标签的属性.
+* **style**: 数组类型n每个元素都会创建一个`<style>`元素 对象属性对应标签的属性.
+* **script**: 数组类型n每个元素都会创建一个`<script>`元素 对象属性对应标签的属性.
 
-All elements in the meta object are optional. You can also pass only single values.
+meta对象中的元素都是可选的，你也可以只穿一个值。
+
