@@ -3,12 +3,11 @@
 ```{bash}
 npx nuxi build [rootDir]
 ```
+`build` 命令会把所有的应用程序，服务器和依赖打包到 `.output` ,可用于生产环。
 
-The `build` command creates a `.output` directory with all your application, server and dependencies ready for production.
-
-Option        | Default          | Description
+Option        | 默认值          | 描述
 -------------------------|-----------------|------------------
-`rootDir` | `.` | The root directory of the application to bundle.
-`prerender` | `false` | Pre-render every route of your application. (**note:** This is an experimental flag. The behavior might be changed.)
+`rootDir` | `.` | 要打包的应用程序目录.
+`prerender` | `false` | 预渲染应用程序的每条路径. (**注意:** 还在实验阶段.)
 
-This command sets `process.env.NODE_ENV` to `production`.
+此命令会把`process.env.NODE_ENV` 设置为 `production`.

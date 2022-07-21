@@ -3,15 +3,14 @@
 ```{bash}
 npx nuxi typecheck [rootDir]
 ```
+`typecheck` 命令会执行 [`vue-tsc`](https://github.com/johnsoncodehk/volar/tree/master/packages/vue-tsc) 来检查整个应用的类型.
 
-The `typecheck` command runs [`vue-tsc`](https://github.com/johnsoncodehk/volar/tree/master/packages/vue-tsc) to check types throughout your app.
-
-Option        | Default          | Description
+Option        | Default          | 描述
 -------------------------|-----------------|------------------
-`rootDir` | `.` | The directory of the target application.
+`rootDir` | `.` | 目标应用的目录
 
-This command sets `process.env.NODE_ENV` to `production`. To override, define `NODE_ENV` in a `.env` file or as a command-line argument.
+此命令会把 `process.env.NODE_ENV` 设置为 `production`.可以`.env`在文件或命令行参数修改`NODE_ENV` 
 
 ::alert
-You can also enable type-checking at build or development time with [the `typescript.typeCheck` option in your `nuxt.config` file](/api/configuration/nuxt.config#typescript).
+你也可以在构建或开发阶段使用[the `typescript.typeCheck` option in your `nuxt.config` file](/api/configuration/nuxt.config#typescript)检查类型.
 ::

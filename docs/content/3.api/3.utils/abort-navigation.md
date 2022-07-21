@@ -4,13 +4,13 @@
 abortNavigation(err?: Error | string): false
 ```
 
-* **err**: Optional error to be thrown by `abortNavigation()`.
+* **err**: `abortNavigation()`中的抛出的错误是可选的.
 
 ::alert{type="warning"}
-`abortNavigation()` is only usable inside a [route middleware handler](/guide/directory-structure/middleware).
+`abortNavigation()` 只能在 [路由中间件处理程序中](/guide/directory-structure/middleware)中使用。
 ::
 
-Inside a route middleware handler, `abortNavigation()` will abort navigation, and throw an error if one is set as a parameter.
+在路由中间件内部`abortNavigation()`如果设置了错误参数，导航会被终止。
 
 ::ReadMore{link="/guide/features/routing"}
 ::

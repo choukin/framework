@@ -3,9 +3,8 @@
 ```{bash}
 npx nuxi info [rootDir]
 ```
-
-The `info` command logs information about the current or specified Nuxt project.
+`info`命令记录当前或指定Nuxt应用的信息。
 
 Option        | Default          | Description
 -------------------------|-----------------|------------------
-`rootDir` | `.` | The directory of the target application.
+`rootDir` | `.` | 目标文件夹

@@ -4,14 +4,14 @@
 npx nuxi preview [rootDir]
 ```
 
-The `preview` command starts a server to preview your Nuxt application after running the `build` command.
+`preview` 命令在执行 `build` 后启动一个服务来预览Nuxt应用。
 
 Option        | Default          | Description
 -------------------------|-----------------|------------------
-`rootDir` | `.` | The root directory of the application to preview.
+`rootDir` | `.` | 要预览应用程序的根目录
 
-This command sets `process.env.NODE_ENV` to `production`. To override, define `NODE_ENV` in a `.env` file or as command-line argument.
+这个命令会把`process.env.NODE_ENV` 设置为 `production`.可以在 `.env` 文件或命令行中设置`NODE_ENV`来覆盖默认值。
 
 ::alert{type=info}
-For convenience, in preview mode, your `.env` file will be loaded into `process.env`. (However, in production you will need to ensure your environment variables are set yourself.)
+为了方便，在预览模式中`.env`文件会加加载到`process.env`.（但是，生成模式时，需要自己设置环境变量）
 ::

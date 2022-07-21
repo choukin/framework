@@ -1,24 +1,25 @@
 # `navigateTo`
 
-`navigateTo` is a router helper function that allows creating programmatic navigation for users to navigate within Nuxt application.
+`navigateTo` 是一个在应用内部使用编程式导航的工具函数。 
 
-`navigateTo` is available on both server side and client side. It can be used within plugins, middleware or can be called directly to perform page navigation.
+`navigateTo` 在服务端和客户端都可以使用。可以在插件、中间件、页面、组件中使用，可以直接调用来执行页面导航。
 
-## Usage
+## 用法
 
 ```ts
 navigateTo (route: string | Route, { redirectCode = 302, replace = false })
 ```
 
-`route` can be a plain string or a route object to redirect to.
+`route` 可以是一个纯字符串，也可以是一个要重定向到的路由对象。
 
 ::alert{type="warning"}
-Make sure to use always `await` or `return` on result of `navigateTo()` when calling it.
+确保调用它时使用 `await` / `return`来获得navigateTo()的返回值。
+Make sure to use always `await` or `retun` on result of `navigateTo()` when calling it.
 ::
 
-## Examples
+## 示例
 
-### Within a Vue component
+### 在组件中使用
 
 ```vue
 <script setup>
@@ -39,7 +40,7 @@ return navigateTo({
 </script>
 ```
 
-### Within route middleware
+### 在路由中间件中使用
 
 ```js
 export default defineNuxtRouteMiddleware((to, from) => {
@@ -57,20 +58,21 @@ export default defineNuxtRouteMiddleware((to, from) => {
 ::ReadMore{link="/guide/directory-structure/middleware"}
 ::
 
-### Options
+### 可选项
 
 #### `redirectCode`
 
 - Type: Number
 
-`navigateTo` redirects to the given path and sets the redirect code to [`302` Found](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302) by default when the redirect takes place on the server side.
+`navigateTo` 当重定向发生子啊服务器端时，重定向给定的路径并默认设置redirectCode 为 [`302` Found](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302)。
 
-This default behavior can be modified by providing different `redirectCode` as an optional parameter. Commonly [`301` Moved Permanently](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301) can be used for permant redirections.
+可以设置`redirectCode`的值来修改默认行为，`redirectCode`时可选参数。可以使用过 [`301` Moved Permanently](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301) 来设置永久重定向。
 
 #### `replace`
 
 - Type: Boolean
 
-By default, `navigateTo` pushes the given route into Vue router instance on client-side.
+默认情况下,在客户端`navigateTo` 会把给定的路由推送到Vue router 实例中。
 
-This behavior can be changed by setting `replace` to `true`, to indicate that given route should be replaced.
+可以通过设置`replace:true`来修改默认行为，表示替换实例中的路由。
+

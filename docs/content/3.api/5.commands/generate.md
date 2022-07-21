@@ -4,8 +4,8 @@
 npx nuxi generate [rootDir]
 ```
 
-The `generate` command pre-renders every route of your application and stores the result in plain HTML files that you can deploy on any static hosting services. The command triggers the `nuxi build` command with the `prerender` argument set to `true`
+`generate` 命令会把应用程序的路由与渲染到纯净的HTML文件。你可以部署到任何静态托管服务中。该命令会触发 `nuxi build` 并设置 `prerender` 参数为`true`.
 
-Option        | Default          | Description
+Option        | Default          | 描述
 -------------------------|-----------------|------------------
-`rootDir` | `.` | The root directory of the application to generate
+`rootDir` | `.` | 要操作生产的项目目录

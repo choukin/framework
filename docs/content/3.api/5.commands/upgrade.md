@@ -4,8 +4,7 @@
 npx nuxi upgrade [--force|-f]
 ```
 
-The `upgrade` command upgrades Nuxt 3 to the latest version.
-
+`upgrade`命令会把Nuxt 3 升级到最新版本。 
 Option        | Default          | Description
 -------------------------|-----------------|------------------
-`--force, -f` | `false` | Removes `node_modules` and lock files before upgrade.
+`--force, -f` | `false` | 升级前删除 `node_modules` 和 锁包文件

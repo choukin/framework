@@ -3,11 +3,11 @@
 ::ReadMore{link="/guide/features/data-fetching"}
 ::
 
-Nuxt uses [ohmyfetch](https://github.com/unjs/ohmyfetch) to expose globally the `$fetch` helper for making HTTP requests within your Vue app or API routes.
+Nuxt 使用[ohmyfetch](https://github.com/unjs/ohmyfetch)实现了一个全局的`$fetch`函数来在客户端和API路由中发送HTTP请求。
 
-During server-side rendering, calling `$fetch` to fetch your internal [API routes](/guide/directory-structure/server) will directly call the relevant function (emulating the request), **saving an additional API call**.
+服务端渲染时，调用`$fetch`来请求内部 [API routes](/guide/directory-structure/server) 回直接调用对应的函数（模拟请求），**节省API调用**。
 
-Note that `$fetch` is the preferred way to make HTTP calls in Nuxt 3 instead of [@nuxt/http](https://github.com/nuxt/http) and [@nuxtjs/axios](https://github.com/nuxt-community/axios-module) that are made for Nuxt 2.
+注意 `$fetch` 是Nuxt 3中首选的HTTP调用方式。而不是Nuxt 2 中的 [@nuxt/http](https://github.com/nuxt/http) 和 [@nuxtjs/axios](https://github.com/nuxt-community/axios-module) 
 
 ::NeedContribution
 ::

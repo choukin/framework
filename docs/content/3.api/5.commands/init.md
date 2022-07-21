@@ -3,11 +3,10 @@
 ```{bash}
 npx nuxi init|create [--verbose|-v] [--template,-t] [dir]
 ```
+`init` 命令 初始化一个新的Nuxt项目。
 
-The `init` command initializes a fresh Nuxt project.
-
-Option        | Default          | Description
+Option        | Default          | 描述
 -------------------------|-----------------|------------------
-`--verbose, -v` | `false` | Log information about the installation process.
-`--template, -t` | `nuxt/starter#v3` | Specify a Git repository to use as a template.
-`dir` | `nuxt-app` | Name of the install directory.
+`--verbose, -v` | `false` | 输出安装过程中的信息。
+`--template, -t` | `nuxt/starter#v3` | 指定模版的git仓库
+`dir` | `nuxt-app` | 安装陌路的名称

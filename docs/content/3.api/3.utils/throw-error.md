@@ -1,10 +1,10 @@
 # `throwError`
 
-Nuxt provides a quick and simple way to throw errors.
+Nuxt 提供了一个快捷简单的方式来抛出异常
 
-Within your pages, components and plugins you can use `throwError` to throw an error.
+在页面，组件，插件中，可以使用 `throwerror` 来抛出一个错误。
 
-**Parameters:**
+**参数:**
 
 - `error`: `string | Error`
 
@@ -12,9 +12,9 @@ Within your pages, components and plugins you can use `throwError` to throw an e
 throwError("😱 Oh no, an error has been thrown.")
 ```
 
-The thrown error is set in the state using [`useError()`](/api/composables/use-error) to create a reactive and SSR-friendly shared error state across components.
+抛出的错误会通过[`useError()`](/api/composables/use-error)设置到状态里，因此这个错误是响应式的，SSR友好的，跨组件的。
 
-`throwError` calls the `app:error` hook.
+`throwError`调用了 `app:error` 钩子。
 
 ::ReadMore{link="/guide/features/error-handling"}
 ::
